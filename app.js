@@ -9,7 +9,7 @@ var velocityX = 0;
 var velocityY = 0;
 var snakeBody = [];
 var foodX;
-var foodY;
+var foodY;  
 var gameOver = false;
 
 window.onload = function() {
