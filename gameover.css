@@ -1,0 +1,38 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  background: url(https://t4.ftcdn.net/jpg/03/08/87/39/360_F_308873970_klaX5UmSzaODVHO6bv5vnTECKYDtWMB6.jpg);
+  background-repeat:no-repeat ;
+  background-size: cover;
+}
+
+#gameover{
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 16vw;
+}
+
+#yourscore{
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 2vw;
+  margin-left: -5vw;
+  
+}
+
+a{
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  margin-left: 36vw;
+  line-height: 100px;
+}
+

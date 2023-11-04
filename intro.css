@@ -1,0 +1,38 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+#play-button{ 
+  margin-left: 70vw;
+  margin-top: -35vw;
+}
+
+#start-game{
+  font-size: 50px;
+  margin-left: 77vw;
+  margin-top: -4vw;
+  
+}
+
+#logo{
+  
+  
+}
+
+#instructions-page{
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  margin-left: 82vw;
+  
+}
+
+#instructions-page:hover{
+  text-decoration: underline;
+}
+
+#images{
+  display: flex;
+}

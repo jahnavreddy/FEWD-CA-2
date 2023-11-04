@@ -1,0 +1,31 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  /* text-align: center; */
+}
+
+.instructions{
+  background-color: black;
+  height: 600px;
+  margin-top: 2vw;
+  width: 1300px;
+  margin-left: 8vw;
+  color: white;
+  font-size: 30px;
+  border-radius: 5px;
+  padding: 50px;
+}
+
+#point2,#point3,#point4,#point5{
+  margin-top: 50px;
+}
+
+#instruction-name{
+  font-size: 50px;
+  text-align: center;
+}
