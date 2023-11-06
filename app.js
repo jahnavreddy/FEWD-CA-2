@@ -109,7 +109,6 @@ function placeFood() {
 }
 
 
-
 var touchStartX;
 var touchStartY;
 
