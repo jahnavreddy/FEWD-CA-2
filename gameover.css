@@ -36,3 +36,15 @@ a{
   line-height: 100px;
 }
 
+@media (max-width:600px) {
+  #snakeboard{
+    width: 100%;
+  }
+}
+
+@media(max-width:600px) {
+  #score-board{
+    width: 100%;
+  }
+} 
+
