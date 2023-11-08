@@ -29,3 +29,14 @@ body {
   font-size: 50px;
   text-align: center;
 }
+@media only screen and (max-width:400px){
+  .instructions{
+    width: auto;
+    height: auto;
+    font-size: 15px;
+  }
+  #instruction-name{
+    font-size: 30px;
+    margin: auto;
+  }
+}

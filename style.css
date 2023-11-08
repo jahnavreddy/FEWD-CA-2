@@ -11,3 +11,16 @@ body {
   background-image: url(https://cdn.wallpapersafari.com/66/44/zldaLS.jpg);
   background-size:100% 100vh ;
 }
+
+@media (max-width: 500px) {
+  body {
+    /* background-image: url(https://cdn.wallpapersafari.com/66/44/zldaLS.jpg); */
+    background-size:100% 100vh;
+    background-repeat: no-repeat;
+  }
+  #snakeboard{
+    max-height: 280px; 
+    max-width: 280px;
+  }
+
+}

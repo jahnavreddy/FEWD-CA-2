@@ -36,6 +36,10 @@ a{
   line-height: 100px;
 }
 
+#restart{
+  cursor: pointer;
+}
+
 @media (max-width:600px) {
   #snakeboard{
     width: 100%;
