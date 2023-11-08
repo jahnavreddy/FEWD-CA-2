@@ -1,7 +1,7 @@
 //reponsive buttons for mobile devices
 
 document.addEventListener("keyup",changeDirection);
-document.getElementById("arrowup").addEventListener("click",()=>{changeDirectionFromButton("ArrowUp")
+document.getElementById("arrowup").addEventListener("click",()=>{ changeDirectionFromButton("ArrowUp")
     velocityX=0
     velocityY=-1
 })
@@ -39,10 +39,10 @@ var foodX;
 var foodY;  
 var gameOver = false;
 var score = 0;
-
+let interval ;
 //giving the background music//
 
-let bgmMusic = new Audio("assets/stranger-things-124008.mp3");
+let bgmMusic = new Audio("./assets/stranger-things-124008.mp3");
 bgmMusic.play();
 loop = true;
 
@@ -65,7 +65,7 @@ window.onload = function() {
 
     placeFood();
     document.addEventListener("keyup", changeDirection);
-    setInterval(update, 100);
+    interval = setInterval(update, 100);
 }
     //randomizing the food //
 
@@ -78,7 +78,8 @@ function placeFood() {
 
 function update() {
     if (gameOver) {
-        window.location.href = `./gameover.html`; //redirecting to
+        clearInterval(interval)
+        window.location.href = "./gameover.html"; //redirecting to window
     }
 
     //making board for the game //
@@ -99,6 +100,9 @@ function update() {
     }
 
     for (let i = snakeBody.length-1; i > 0; i--) {
+        // console.log(snakeBody);
+        // console.log(snakeBody[i]);
+        
         snakeBody[i] = snakeBody[i-1];
     }    
     if (snakeBody.length) {
@@ -111,17 +115,16 @@ function update() {
     snakeX += velocityX * blockSize;
     snakeY += velocityY * blockSize;
 
-    //conditions for game over
     context.fillRect(snakeX, snakeY, blockSize, blockSize);
     for (let i = 0; i < snakeBody.length; i++) {
         context.fillRect(snakeBody[i][0], snakeBody[i][1], blockSize, blockSize);
     }
-
+    //conditions for gameover
     if (snakeX < 0 || snakeX > columns*blockSize || snakeY < 0 || snakeY > rows*blockSize) {
         gameOver = true;
         window.location.href = "./gameover.html";
     }
-
+    //
     for (let i = 0; i < snakeBody.length; i++) {
         if (snakeX == snakeBody[i][0] && snakeY == snakeBody[i][1]) {
             gameOver = true;
@@ -129,8 +132,9 @@ function update() {
         }
     }
 }
-    // assigning functions for movemennt of snakea
+    // assigning functions for movemennt of snakes
 function changeDirection(e) {
+
     if (e.code == "ArrowUp" && velocityY != 1) {
         velocityX = 0;
         velocityY = -1;
