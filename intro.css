@@ -32,3 +32,27 @@
   display: flex;
 }
 
+@media(max-width:470px){
+  #snake{
+    height: 200px;
+    margin-top: 50%;
+  }
+  #logo{
+    height: 50px;
+    margin-top: 30%;
+  }
+  #play-button{
+    height: 40px;
+    margin-left: 30vw;
+    margin-top: 5vw;
+  }
+  #start-game{
+    font-size: 25px;
+    margin-left: 40vw;
+    margin-top: -9vw;
+  }
+  #instructions-page{
+    font-size: 15px;
+    margin-left: 50vw;
+  }
+}

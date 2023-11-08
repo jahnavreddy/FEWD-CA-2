@@ -1,7 +1,7 @@
 //reponsive buttons for mobile devices
 
 document.addEventListener("keyup",changeDirection);
-document.getElementById("arrowup").addEventListener("click",()=>{        changeDirectionFromButton("ArrowUp")
+document.getElementById("arrowup").addEventListener("click",()=>{changeDirectionFromButton("ArrowUp")
     velocityX=0
     velocityY=-1
 })

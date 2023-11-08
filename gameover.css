@@ -46,9 +46,17 @@ a{
   }
 }
 
-@media(max-width:600px) {
-  #score-board{
-    width: 100%;
+@media(max-width:470px) {
+  body{
+    background-repeat:no-repeat ;
+    background-size:100% 100vh;
+    font-size: 10px ;
+    text-align: center;
+    align-content: center;
+    
+  }
+  a{
+    margin-left: 0px;
   }
 } 
 
